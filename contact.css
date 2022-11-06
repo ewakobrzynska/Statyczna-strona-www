@@ -18,8 +18,8 @@
 }
 
 .aside_image{
-    width: 12rem;
-    margin-bottom: 2rem;
+    width: 25rem;
+    margin-bottom: 1rem;
 }
 
 .contact_aside h2{
@@ -32,33 +32,9 @@
     margin-bottom: 2rem;
 }
 
-.contact_details li{
-    display: grid;
-    gap: 1rem;
-    align-items: center;
-    margin-bottom: 1rem;
-}
-
-/*.contact_socials{
-    display: flex;
-    gap: 0.8rem;
-    margin-top: 3rem;
-}
-
-.contact_socials a{
-    background: var(--color-bg2);
-    padding: 0.5rem;
-    border-radius: 50%;
-    font-size: 0.9rem;
-    transition: var(--transition);
-}
-
-.contact_socials a:hover{
-    background: transparent;
-}*/
-
 .contact_form{
     display: flex;
+    flex-direction: column;
     gap: 1.2rem;
     margin-right: 4rem;
 }

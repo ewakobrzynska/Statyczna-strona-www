@@ -9,17 +9,17 @@
 }
 
 :root{
-    --color-primary: #6c63ff;
+    --color-primary: #566e30;
     --color-success: #00bf8e;
     --color-warning: #f7c94b;
-    --color-danger: #6c63ff;
+    --color-danger: #6a8d38;
     --color-danger-variant: rgba(247,88,66,0.4);
     --color-white: #fff;
     --color-light: rgba(255,255,255,0.7);
     --color-black: #000;
-    --color-bg: #1f2641;
-    --color-bg1: #2e3267;
-    --color-bg2: #424890;
+    --color-bg: #3e4b31;
+    --color-bg1: #3a491f;
+    --color-bg2: #3a491f;
 
     --container-width-lg:76%;
     --container-width-md:90%;
@@ -98,7 +98,7 @@ img{
 
 /*NAVBAR*/
 nav{
-    background: rebeccapurple;
+    background: #2b3416;
     width: 100vw;
     height: 5rem;
     position: fixed;
@@ -197,6 +197,7 @@ header{
 
 .competition_icon{
     background: var(--color-primary);
+    width: 5rem;
     padding: 0.7rem;
     border-radius: 0.9rem;
 }

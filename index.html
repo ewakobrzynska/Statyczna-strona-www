@@ -1,21 +1,25 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="pl" xmlns="http://www.w3.org/1999/html">
 <head>
   <meta charset="utf-8" />
   <meta http-euiv="X-UA-Compatible" content="IE-edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Responsive website</title>
+  <title>R.F. & Tenis</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="articles.css">
   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/uniocns.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
 </head>
 
 <body>
+
+<!--------------MENU-------------------->
   <nav>
     <div class="container nav_container">
-      <a href="index.html"><h4>EGATOR</h4></a>
+      <a href="index.html"><h4>ROGER FEDERER & TENIS</h4></a>
       <ul class="nav_menu">
         <li><a href="index.html">HOME</a></li>
         <li><a href="about.html">ABOUT</a></li>
@@ -27,6 +31,7 @@
     </div>
   </nav>
 
+<!--------------NAGŁÓWEK------------->
   <header>
     <div class="container header_container">
       <div class="header_left">
@@ -34,48 +39,121 @@
         <p>I'll let the racket do the talking.</p>
         <a href="courses.html" class="btn btn-primary">ZAPISZ SIE</a>
       </div>
-
       <div class="header_right">
         <div class="header_right-image">
           <img src="https://cdn-icons-png.flaticon.com/512/164/164467.png">
         </div>
       </div>
     </div>
-  </header>
 
-  <section class="competitions">
-    <div class="container competitions_container">
-      <div class="competitions_left">
-        <h1>Główne turnieje</h1>
-        <p> Wielki Szlem: Australian Open, Roland Garros, Wimbledon oraz US Open</p>
-        <a href="#" class="btn">Dowiedz się więcej</a>
+    <div class="container header_container">
+      <div class="header_left">
+        <h1> Poznaj sposób gry Rogera Federera!</h1>
+        <p>I'll let the racket do the talking.</p>
+        <a href="courses.html" class="btn btn-primary">ZAPISZ SIE</a>
+      </div>
+      <div class="header_right">
+        <div class="header_right-image">
+          <img src="https://spokeo.pl/storage/article/JU6YeH0czqkirmZMrTOGsheaYKEvVXklTmlzkQrN.jpeg">
+        </div>
       </div>
     </div>
+  </header>
 
-    <div class="competitions_right">
-      <article class="competition">
-        <span class="competition_icon"><img src="https://static.thenounproject.com/png/870851-200.png"></span>
-        <h5>Australian Open</h5>
-        <p>turniej</p>
-      </article>
-      <article class="competition">
-        <span class="competition_icon"><img src="https://static.thenounproject.com/png/870851-200.png"></span>
-        <h5>Roland Garros</h5>
-        <p>turniej</p>
-      </article>
-      <article class="competition">
-        <span class="competition_icon"><img src="https://static.thenounproject.com/png/870851-200.png"></span>
-        <h5>Wimbledon</h5>
-        <p>turniej</p>
-      </article>
-      <article class="competition">
-        <span class="competition_icon"><img src="https://seeklogo.com/images/U/us-open-logo-62ABECF2B8-seeklogo.com.png"></span>
-        <h5>US Open</h5>
-        <p>turniej</p>
+<!----------------NEWSY------------------->
+  <section class="container menus_container mySwiper">
+    <h2>NEWS</h2>
+    <div class="swiper-wrapper">
+
+      <article class="menu swiper-slide"/>
+        <div class="avatar">
+          <img src="https://spokeo.pl/storage/article/JU6YeH0czqkirmZMrTOGsheaYKEvVXklTmlzkQrN.jpeg">
+        </div>
+        <div class="menu_info">
+          <h5>naglowek artykulu1</h5>
+        </div>
+        <div class="menu_body">
+          <p>skrocona czesc artykulu clickbait</p>
+        </div>
+      <article class="menu swiper-slide"/>
+
+    <article class="menu swiper-slide">
+        <div class="avatar">
+          <img src="https://spokeo.pl/storage/article/JU6YeH0czqkirmZMrTOGsheaYKEvVXklTmlzkQrN.jpeg">
+        </div>
+          <div class="menu_info">
+            <h5>naglowek artykulu2</h5>
+          </div>
+          <div class="menu_body">
+            <p>skrocona czesc artykulu clickbait</p>
+          </div>
+    </article>
+
+      <article class="menu swiper-slide">
+        <div class="avatar">
+          <img src="https://spokeo.pl/storage/article/JU6YeH0czqkirmZMrTOGsheaYKEvVXklTmlzkQrN.jpeg">
+        </div>
+          <div class="menu_info">
+            <h5>naglowek artykulu3</h5>
+          </div>
+          <div class="menu_body">
+            <p>skrocona czesc artykulu clickbait</p>
+          </div>
       </article>
     </div>
   </section>
 
+  <section class="competitions">
+      <div class="container competitions_container">
+        <div class="competitions_left">
+          <h1>Główne turnieje</h1>
+          <p> Wielki Szlem: Australian Open, Roland Garros, Wimbledon oraz US Open</p>
+          <a href="#" class="btn">Dowiedz się więcej</a>
+        </div>
+      </div>
+
+      <div class="competitions_right">
+        <article class="competition">
+          <div class="competition_icon">
+            <img src="https://static.thenounproject.com/png/870851-200.png">
+          </div>
+          <h5>Australian Open</h5>
+          <p>turniej</p>
+        </article>
+        <article class="competition">
+          <div class="competition_icon">
+            <img src="https://static.thenounproject.com/png/870851-200.png">
+          </div>
+          <h5>Roland Garros</h5>
+          <p>turniej</p>
+        </article>
+        <article class="competition">
+          <div class="competition_icon">
+            <img src="https://static.thenounproject.com/png/870851-200.png">
+          </div>
+          <h5>Wimbledon</h5>
+          <p>turniej</p>
+        </article>
+        <article class="competition">
+          <div class="competition_icon">
+            <img src="https://seeklogo.com/images/U/us-open-logo-62ABECF2B8-seeklogo.com.png">
+          </div>
+          <h5>US Open</h5>
+          <p>turniej</p>
+        </article>
+      </div>
+  </section>
+
+
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
 
 </body>
 </html>
