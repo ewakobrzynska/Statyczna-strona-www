@@ -10,16 +10,13 @@
 
 :root{
     --color-primary: #566e30;
-    --color-success: #00bf8e;
-    --color-warning: #f7c94b;
     --color-danger: #6a8d38;
-    --color-danger-variant: rgba(247,88,66,0.4);
     --color-white: #fff;
     --color-light: rgba(255,255,255,0.7);
     --color-black: #000;
     --color-bg: #3e4b31;
     --color-bg1: #3a491f;
-    --color-bg2: #3a491f;
+    --color-bg2: #2b3416;
 
     --container-width-lg:76%;
     --container-width-md:90%;
@@ -62,7 +59,7 @@ h3{
     font-size: 1.6rem;
 }
 h4{
-    font-size: 1.3rem;
+    font-size: 1.4rem;
 }
 
 a{
@@ -71,6 +68,7 @@ a{
 
 img{
     width: 100%;
+    height: auto;
     display: block;
     object-fit: cover;
 }
@@ -98,7 +96,7 @@ img{
 
 /*NAVBAR*/
 nav{
-    background: #2b3416;
+    background: var(--color-bg2);
     width: 100vw;
     height: 5rem;
     position: fixed;
@@ -129,6 +127,7 @@ nav button{
 
 .nav_menu a:hover{
     color: var(--color-bg2);
+    background-color:#fff;
 }
 
 /* wygląd głównego elementu - ol */
@@ -136,7 +135,7 @@ ol {
     list-style-type:none;
     padding:0;
     margin:0;
-    background-color: #2b3416;
+    background-color: var(--color-bg2);
     font-size:18px;
     height:2em;
     line-height:2em;
@@ -147,7 +146,7 @@ ol {
 ol a {
     display:block;
     text-decoration:none;
-    color:#000;
+    color:#fff;
     padding:0 5px;
 }
 
@@ -156,7 +155,7 @@ ol > li {
     float:left;
     width:150px;
     margin-left:1px;
-    background-color: #2b3416;
+    background-color: var(--color-danger);
     height:2em;
 }
 
@@ -167,13 +166,9 @@ ol > li:first-child {
 
 /* wygląd elementów - li - wszystkich dzieci elementu - ol - po najechaniu kursorem myszki na element - li */
 ol > li:hover {
-    background-color:#EEE;
+    background-color: var(--color-danger);
 }
 
-/* wygląd elementu - a - dziecka elementu - li - będącego dzieckiem elementu - ol - po najechaniu kursorem myszki na element - li */
-ol > li:hover > a {
-    color:#09C;
-}
 
 /* wygląd elementu - ul - dziecka elementu - li - będącego dzieckiem elementu - ol - po najechaniu kursorem myszki na element - li */
 ol > li:hover > ul {
@@ -193,23 +188,14 @@ ol > li > ul {
 /* wygląd elementu - li - w części rozwijanej */
 ol > li > ul > li {
     position:relative;
-    background-color:#EEE;
-}
-
-/* wygląd elementu - a - w części rozwijanej */
-ol > li > ul > li > a {
-    border-top:1px solid #FFF;
+    background-color: var(--color-danger);
 }
 
 /* wygląd elementu - li - w części rozwijanej, po najechaniu kursorem myszki na dany element - li */
 ol > li > ul > li:hover {
-    background-color:#DDD;
+    background-color:#fff;
 }
 
-/* wygląd elementu - a - w części rozwijanej, po najechaniu kursorem myszki na element - li */
-ol > li > ul > li:hover > a {
-    color:#09C;
-}
 
 /*HEADER*/
 header{
@@ -235,23 +221,19 @@ header{
 
 /*STOPKA*/
 .footer{
-    background: var(--color-bg1);
-    padding-top: 5rem;
+    background: var(--color-bg2);
+    padding-top: 4rem;
     font-size: 0.9rem;
 }
 
 .footer_container{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    gap:7rem;
+    gap:6rem;
 }
 
 .footer_container > div h4{
     margin-bottom: 1.2rem;
-}
-
-.footer1 p{
-    margin: 0 0 2rem;
 }
 
 footer ul li{
@@ -264,7 +246,7 @@ footer ul li a:hover{
 
 .footer_copyright{
     text-align: center;
-    margin-top: 4rem;
     padding: 1.2rem 0;
     border-top: 1px solid var(--color-bg2);
 }
+
