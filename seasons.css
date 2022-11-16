@@ -1,5 +1,7 @@
 .seasons{
     margin-top: auto;
+    margin-left: 5rem;
+    margin-right: 5rem;
 }
 
 .seasons-container{
@@ -11,6 +13,7 @@
     align-items: center;
     margin: 2rem auto;
     border-radius: 3rem;
+
 }
 
 .image{
@@ -19,4 +22,9 @@
     margin-right: auto;
     width: 40rem;
     margin-bottom: 1rem;
+}
+
+/********DARK THEME*********/
+.dark-theme .seasons-container{
+    background: var(--color-bg1Dark);
 }

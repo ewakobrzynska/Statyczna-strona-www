@@ -26,9 +26,8 @@
     --color-bg1Dark: #373837;
     --color-bg2Dark: #2b2c2b;
 
-    --container-width-lg:76%;
-    --container-width-md:90%;
-    --container-width-sm:94%;
+    --container-width-lg:90%;
+    --container-width-md: 94%;
 
     --transition: all 400ms ease;
 }
@@ -75,7 +74,7 @@ a{
 }
 
 img{
-    width: 100%;
+    max-width: 100%;
     height: auto;
     display: block;
     object-fit: cover;
@@ -213,6 +212,8 @@ header{
     height: auto;
     margin-bottom: 10rem;
     margin-top: 5rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
 }
 
 .header_container{
@@ -259,16 +260,23 @@ footer ul li a:hover{
 
 
 /**********JS******************/
-.btn2 {
+.btn2{
     display: inline-block;
-    background: var(--color-white);
-    color: var(--color-black);
-    padding: 1rem 2rem;
+    background: var(--color-danger);
+    color: white;
+    padding: 0.05rem 1rem;
     border: 1px solid transparent;
     font-weight: 500;
     transition: var(--transition);
-    color: white;
-    background: var(--color-danger);
+}
+
+.dark-theme .btn2-primary{
+    background: var(--color-dangerDark);
+    color: var(--color-white);
+}
+
+.dark-theme .btn2{
+    background: var(--color-dangerDark);
 }
 
 .dark-theme {
@@ -306,4 +314,23 @@ footer ul li a:hover{
 
 .dark-theme nav_menu a:hover{
     color: var(--color-bg2Dark);
+}
+
+
+@media screen and(max-width: 400px){
+    .container{
+        width: var(--container-width-md);
+    }
+    h1{
+        font-size: 2.2rem;
+    }
+    h2{
+        font-size: 1.8rem;
+    }
+    h3{
+        font-size: 1.4rem;
+    }
+    h4{
+        font-size: 1.2rem;
+    }
 }

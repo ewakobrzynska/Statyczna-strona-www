@@ -48,7 +48,7 @@
     width: 50%;
 }
 
-input,textarea{
+input,textarea {
     width: 100%;
     padding: 1rem;
     border: 1px solid var(--color-primary);
@@ -56,5 +56,22 @@ input,textarea{
     color: var(--color-white);
 }
 
+/*********DARK THEME************/
+.dark-theme input{
+    border: 1px solid var(--color-primaryDark);
+    background: var(--color-bgDark);
+}
 
+.dark-theme textarea{
+    border: 1px solid var(--color-primaryDark);
+    background: var(--color-bgDark);
+}
+
+.dark-theme .contact_container{
+    background: var(--color-bg1Dark);
+}
+
+.dark-theme .contact_aside{
+    background: var(--color-primaryDark);
+}
 
