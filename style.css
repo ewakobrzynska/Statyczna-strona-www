@@ -18,6 +18,14 @@
     --color-bg1: #3a491f;
     --color-bg2: #2b3416;
 
+    --color-primaryDark: #7e7e7e;
+    --color-dangerDark: #7c7c7c;
+    --color-whiteDark: #fff;
+    --color-lightDark: rgba(255,255,255,0.7);
+    --color-bgDark: #383737;
+    --color-bg1Dark: #373837;
+    --color-bg2Dark: #2b2c2b;
+
     --container-width-lg:76%;
     --container-width-md:90%;
     --container-width-sm:94%;
@@ -247,6 +255,55 @@ footer ul li a:hover{
 .footer_copyright{
     text-align: center;
     padding: 1.2rem 0;
-    border-top: 1px solid var(--color-bg2);
 }
 
+
+/**********JS******************/
+.btn2 {
+    display: inline-block;
+    background: var(--color-white);
+    color: var(--color-black);
+    padding: 1rem 2rem;
+    border: 1px solid transparent;
+    font-weight: 500;
+    transition: var(--transition);
+    color: white;
+    background: var(--color-danger);
+}
+
+.dark-theme {
+    color: var(--color-white);
+    background: var(--color-bgDark);
+}
+
+.dark-theme nav{
+    background: var(--color-bg2Dark);
+}
+
+.dark-theme .btn-primary{
+    background: var(--color-dangerDark);
+}
+
+.dark-theme footer{
+    background: var(--color-bg2Dark);
+}
+
+.dark-theme ol > li > ul > li {
+    background-color: var(--color-dangerDark);
+}
+
+.dark-theme ol > li:hover {
+    background-color: var(--color-dangerDark);
+}
+
+.dark-theme ol > li{
+    background-color: var(--color-dangerDark);
+}
+
+.dark-theme ol{
+    background-color: var(--color-bg2Dark);
+}
+
+.dark-theme nav_menu a:hover{
+    color: var(--color-bg2Dark);
+}
