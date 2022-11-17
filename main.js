@@ -8,7 +8,7 @@ switcher.addEventListener('click', function() {
 });
 
 
-/*function toggleMenu(){
+function toggleMenu(){
 
     console.log("toggleMenu called!");
 
@@ -23,4 +23,4 @@ switcher.addEventListener('click', function() {
     }
 
 
-}*/
+}
