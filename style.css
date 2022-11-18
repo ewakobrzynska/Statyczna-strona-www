@@ -172,16 +172,6 @@ ol > li {
     height:2em;
 }
 
-/* wygląd elementu - li - pierwszego dziecka elementu - ol */
-ol > li:first-child {
-    margin-left:0;
-}
-
-/* wygląd elementów - li - wszystkich dzieci elementu - ol - po najechaniu kursorem myszki na element - li */
-ol > li:hover {
-    background-color: var(--color-danger);
-}
-
 
 /* wygląd elementu - ul - dziecka elementu - li - będącego dzieckiem elementu - ol - po najechaniu kursorem myszki na element - li */
 ol > li:hover > ul {
@@ -346,7 +336,7 @@ footer ul li a:hover{
     }
 
     /*.nav{
-        height: auto;
+        height: 50rem;
     }
     .container .nav_container{
         display: grid;
@@ -356,7 +346,6 @@ footer ul li a:hover{
 
     .nav_menu{
         display: grid;
-        align-items: center;
         gap: 1rem;
     }*/
 
